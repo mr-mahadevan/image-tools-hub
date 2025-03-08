@@ -1,4 +1,4 @@
-package com.example;
+package com.example.convertion;
 
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
