@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 
 public class ImageToPNGConverterService {
 
-    // Convert JPG  to PNG
+    // Convert JPG/GIF/BMP/  to PNG
     public static void convertToPNG(String inputImagePath, String outputPath) throws IOException {
         BufferedImage image = ImageIO.read(new File(inputImagePath));
         File outputFile = new File(outputPath);

@@ -10,9 +10,9 @@ import com.backblaze.b2.client.structures.B2GetDownloadAuthorizationRequest;
 public class B2Utils {
 
             // Backblaze credentials
-            private static String keyId = "00556aa175fbfa80000000003"; // Replace with your Key ID
-            private static String applicationKey = "K005E6tHuY355xalH1q2rczghc0ylts"; // Replace with your Application Key
-            private static String bucketName = "dooupai"; // Replace with your bucket name
+            private static String keyId = ""; // Replace with your Key ID
+            private static String applicationKey = ""; // Replace with your Application Key
+            private static String bucketName = ""; // Replace with your bucket name
 
             // Initialize B2 client
             public static B2StorageClient intializeB2Client() throws B2Exception{
