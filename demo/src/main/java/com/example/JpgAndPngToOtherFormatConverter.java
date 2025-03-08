@@ -33,33 +33,4 @@ public class JpgAndPngToOtherFormatConverter {
         }
     }
 
-
-    // Convert  PNG/JPG/BMP/GIF to webp
-    public static void convertToWebP(String inputImagePath , String outputPath) throws IOException {
-        BufferedImage image = ImageIO.read(new File(inputImagePath));
-        // Ensure WebP format is available
-        if (ImageIO.getImageWritersByFormatName("webp").hasNext()) {
-            ImageIO.write(image, "webp", new File(outputPath));
-            System.out.println("Image successfully converted to WebP: " + outputPath);
-        } else {
-            System.err.println("WebP format not supported. Ensure Sejda WebP library is included.");
-        }
-    }
-
-    // Convert  PNG/JPG/WEBP/BMP to gif
-    public static void convertToGif(String inputImagePath, String outputPath) throws IOException {
-        BufferedImage image = ImageIO.read(new File(inputImagePath));
-        File outputFile = new File(outputPath);
-        ImageIO.write(image, "gif", outputFile);
-        System.out.println("Image successfully converted to GIF: " + outputPath);
-    }
-
-    // Convert PNG/JPG/WEBP/BMP to BMP
-    public static void convertToBmp(String inputImagePath, String outputPath) throws IOException {
-        BufferedImage image = ImageIO.read(new File(inputImagePath));
-        File outputFile = new File(outputPath);
-        ImageIO.write(image, "bmp", outputFile);
-        System.out.println("Image successfully converted to BMP: " + outputPath);
-    }
-
 }
