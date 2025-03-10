@@ -1,19 +1,10 @@
 package com.example;
 
-import com.example.scan.ColorExtractorService;
-import com.example.scan.QRCodeGeneratorService;
-import com.example.secure.ImageSteganography;
-import com.example.utils.ImageIdGenerator;
-import com.google.zxing.NotFoundException;
-import com.google.zxing.WriterException;
+import com.example.edit.ImageFlipper;
+import com.example.secure.WatermarkUtility;
 
 import java.awt.*;
 import java.io.IOException;
-import java.security.Key;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class ExecutionEngine extends Thread{
 
@@ -38,11 +29,14 @@ public class ExecutionEngine extends Thread{
         int backgroundColor = 0xFFFFFFFF; // White
 
         try {
-            ImageSteganography.extractData(outFile + "Hided.png");
+            ImageFlipper.flipVertical(inputFile + "sty.jpg", outFile + "hr.jpg");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        System.out.println("Generation Completed");
+
+        System.out.println("Flipping Completed");
+
+
     }
 }
