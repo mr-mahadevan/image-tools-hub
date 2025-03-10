@@ -1,19 +1,9 @@
 package com.example;
 
-import com.example.scan.ColorExtractorService;
-import com.example.scan.QRCodeGeneratorService;
-import com.example.secure.ImageSteganography;
-import com.example.utils.ImageIdGenerator;
-import com.google.zxing.NotFoundException;
-import com.google.zxing.WriterException;
+import com.example.convertion.ImageToGIFFormatConverter;
+import com.example.utils.VideoValidator;
 
-import java.awt.*;
 import java.io.IOException;
-import java.security.Key;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class ExecutionEngine extends Thread{
 
@@ -38,7 +28,14 @@ public class ExecutionEngine extends Thread{
         int backgroundColor = 0xFFFFFFFF; // White
 
         try {
-            ImageSteganography.extractData(outFile + "Hided.png");
+            VideoValidator videoValidator = new VideoValidator();
+            if (videoValidator.isValid(inputFile + "tiny.mp4")){
+                ImageToGIFFormatConverter.convertMp4ToGif(inputFile  + "tiny.mp4",
+                        outFile + "mp4.gif",
+                        20);
+            }else {
+                System.out.println("Video does not meet the conditions.");
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
