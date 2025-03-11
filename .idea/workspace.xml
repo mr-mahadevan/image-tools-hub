@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d32a61a-62ce-458c-b4f3-4c381a696b28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/ExecutionEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/ExecutionEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/convertion/ImageToGIFFormatConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/convertion/ImageToGIFFormatConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/convertion/ImageToPDFConverterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/convertion/ImageToPDFConverterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/bucket/StoreImage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/ExecutionEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/com/example/ExecutionEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/example/convertion/ImageToJPEGFormatConverterService.class" beforeDir="false" />
+    <list default="true" id="fd23cd0b-8767-443b-bb7b-bd6c5ce9a06a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/debug-barcode.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +26,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2u2QqzMLRq429SFYRSgMjSAcnQ5" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
