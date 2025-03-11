@@ -1,10 +1,12 @@
 package com.example;
 
-import com.example.convertion.ImageToGIFFormatConverter;
-import com.example.convertion.URLToImageConverterService;
-import com.example.utils.VideoValidator;
+import com.example.edit.ImageCrop;
+import com.example.edit.enums.AspectRatio;
 
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class ExecutionEngine extends Thread{
 
@@ -14,22 +16,14 @@ public class ExecutionEngine extends Thread{
         String inputFile = "C:/Users/mahad/Pictures/image format testing folder/t1/";
         String outFile = "C:/Users/mahad/Pictures/image format testing folder/t1/";
 
-        String jpg = "art.jpg";
-        String png = "oi.png";
-        String webp = "ew.webp";
-        String bmp = "poi.bmp";
-        String gif = "ger.gif";
+        String jpg = inputFile+ "it.jpg";
+        String png = inputFile+ "oi.png";
+        String webp = inputFile+ "ew.webp";
+        String bmp = inputFile+ "poi.bmp";
+        String gif = inputFile+ "ger.gif";
 
-
-        String data = "I wanna hug you tonight";
-        String fileName = "barcode.png";
-        int width = 600;
-        int height = 200;
-        int foregroundColor = 000; // Blue
-        int backgroundColor = 0xFFFFFFFF; // White
-
-
-
-        System.out.println("Generation Completed");
+        List<String> files = new ArrayList(Arrays.asList(jpg,png,bmp,gif));
+        List<String> files2 = new ArrayList(Arrays.asList(jpg));
+        System.out.println(jpg);
     }
 }
