@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 
-public class ImageToWebPConverterService {
+public class ImageToWebPConverter {
 
     // Convert  PNG/JPG/BMP/GIF to webp
     public static void convertToWebP(String inputImagePath , String outputPath) throws IOException {

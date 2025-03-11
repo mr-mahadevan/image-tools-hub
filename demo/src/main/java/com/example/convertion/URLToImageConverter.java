@@ -6,7 +6,7 @@ import org.apache.http.client.fluent.Request;
 import org.apache.http.client.fluent.Content;
 
 
-public class URLToImageConverterService {
+public class URLToImageConverter {
 
     private static final String ABSTRACT_API_KEY = "ad60d81d3d884af5b62206fdcb72195c";
 
