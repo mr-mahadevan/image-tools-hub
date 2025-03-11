@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class ImageToIconFormatConverterService {
+public class ImageToIconConverter {
 
     private static final int ICON_SIZE = 250;
 
@@ -35,9 +35,9 @@ public class ImageToIconFormatConverterService {
         BufferedImage croppedImage = image.getSubimage(cropX, cropY, cropSize, cropSize);
 
         // Resize to target size
-        BufferedImage resizedImage = new BufferedImage(ImageToIconFormatConverterService.ICON_SIZE, ImageToIconFormatConverterService.ICON_SIZE, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage resizedImage = new BufferedImage(ImageToIconConverter.ICON_SIZE, ImageToIconConverter.ICON_SIZE, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2d = resizedImage.createGraphics();
-        g2d.drawImage(croppedImage.getScaledInstance(ImageToIconFormatConverterService.ICON_SIZE, ImageToIconFormatConverterService.ICON_SIZE, Image.SCALE_SMOOTH), 0, 0, null);
+        g2d.drawImage(croppedImage.getScaledInstance(ImageToIconConverter.ICON_SIZE, ImageToIconConverter.ICON_SIZE, Image.SCALE_SMOOTH), 0, 0, null);
         g2d.dispose();
 
         return resizedImage;

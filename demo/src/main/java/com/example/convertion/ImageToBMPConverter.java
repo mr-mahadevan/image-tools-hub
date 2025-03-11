@@ -6,7 +6,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 
-public class ImageToBMPFormatConverterService {
+public class ImageToBMPConverter {
 
     // Convert JPG/WEBP/GIF/PNG to BMP
     public static void convertToBmp(String inputImagePath, String outputPath) throws IOException {

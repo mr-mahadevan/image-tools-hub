@@ -10,7 +10,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class ImageToGIFFormatConverter {
+public class ImageToGIFConverter {
 
     private static final String FFMGPEG_PATH = "C:/Users/mahad/Pictures/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg.exe";
 

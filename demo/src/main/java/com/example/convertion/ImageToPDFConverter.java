@@ -13,7 +13,7 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.graphics.image.LosslessFactory;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-public class ImageToPDFConverterService {
+public class ImageToPDFConverter {
 
     // Convert PNG/JPG/WEBP/BMP/GIF to PDF
     public static void convertToPdf(List<String> inputImagePaths, String outputPath) throws IOException {

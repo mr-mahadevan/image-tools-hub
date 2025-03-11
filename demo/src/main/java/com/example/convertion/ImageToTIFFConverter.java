@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class ImageToTIFFFormatConverterService {
+public class ImageToTIFFConverter {
 
     // Using Apache Commons-Imaging Library
     // Supported format JPG/PNG/BMP/WEBP/GIF to TIFF

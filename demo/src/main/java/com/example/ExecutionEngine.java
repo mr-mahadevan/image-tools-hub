@@ -1,11 +1,9 @@
 package com.example;
 
-import com.example.edit.ImageCrop;
-import com.example.edit.enums.AspectRatio;
+import com.drew.imaging.ImageProcessingException;
+import com.example.extract.MetadataExtractor;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.io.IOException;
 
 
 public class ExecutionEngine extends Thread{
@@ -22,8 +20,16 @@ public class ExecutionEngine extends Thread{
         String bmp = inputFile+ "poi.bmp";
         String gif = inputFile+ "ger.gif";
 
-        List<String> files = new ArrayList(Arrays.asList(jpg,png,bmp,gif));
-        List<String> files2 = new ArrayList(Arrays.asList(jpg));
-        System.out.println(jpg);
+
+        try {
+            MetadataExtractor.extractData(jpg, outFile + "data.txt")
+                    .entrySet()
+                    .stream()
+                    .forEach(map-> System.out.println(map.getKey() + " : " + map.getValue()));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ImageProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

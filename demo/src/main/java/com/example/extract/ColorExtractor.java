@@ -1,5 +1,6 @@
-package com.example.scan;
+package com.example.extract;
 
+import com.example.scan.ClusterablePoint;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
 import org.apache.commons.math3.ml.distance.EuclideanDistance;
 import org.apache.commons.math3.ml.clustering.*;
@@ -14,7 +15,7 @@ import java.awt.*;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ColorExtractorService {
+public class ColorExtractor {
 
     List<Map.Entry<String, Double>> sortedColors;
 

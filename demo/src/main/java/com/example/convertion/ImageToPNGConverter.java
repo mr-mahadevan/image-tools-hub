@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class ImageToPNGConverterService {
+public class ImageToPNGConverter {
 
     // Convert JPG/GIF/BMP/  to PNG
     public static void convertToPNG(String inputImagePath, String outputPath) throws IOException {
