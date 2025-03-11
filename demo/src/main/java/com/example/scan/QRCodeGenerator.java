@@ -14,7 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-public class QRCodeGeneratorService {
+public class QRCodeGenerator {
 
     public static void generateCustomQR(String data, int size, Color qrColor,Color bgColor, int borderRadius, String filePath)
             throws WriterException, IOException {
