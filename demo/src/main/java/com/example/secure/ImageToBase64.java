@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.Base64;
 import java.util.Map;
 
-public class ImageToBase64Service {
+public class ImageToBase64 {
 
     // Supported format JPG/PNG/WEBP/BMP/GIF to Base64
     public static Map<String,String> encodeImageToBase64(String imagePath, String filePath) throws IOException {
